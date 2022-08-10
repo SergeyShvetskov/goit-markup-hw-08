@@ -1,0 +1,44 @@
+.auth-nav {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+
+
+&__item:last-child {
+    margin-left: 30px;
+}
+&__link {
+    text-decoration: none;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-gray);
+
+    transition: color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-timing-function);
+}
+
+&__link:hover,
+&__link:focus {
+    color: var(--brand-color-blue-light);
+}
+
+
+&__icon-mail {
+    height: 12px;
+    width: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+&__icon-phone {
+    height: 16px;
+    width: 10px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+}

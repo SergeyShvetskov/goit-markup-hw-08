@@ -1,0 +1,31 @@
+// Контакты футер
+.address {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--brand-color-white);
+    font-style: normal;
+
+&__street {
+    margin-bottom: 5px;
+}
+}
+.address__link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--brand-color-white);
+    font-style: normal;
+    text-decoration: none;
+    display: block;
+    color: var(--brand-color-address);
+    transition: color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-timing-function);
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--brand-color-blue-light);
+    }
+}
+.address__link:first-child {
+    margin-bottom: 5px;
+}

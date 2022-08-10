@@ -1,0 +1,64 @@
+.mailing {
+    margin-left: 93px;
+    margin-top: 12px;
+
+
+&__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--brand-color-white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+&__input {
+    margin-right: 12px;
+    padding: 15px 16px;
+    width: 358px;
+    color: var(--brand-color-white);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+&__input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+&__button {
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    display: flex;
+
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    line-height: 1.9;
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+
+    color: var(--brand-color-white);
+    background: var(--brand-color-blue-light);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+&__button-icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+&__group {
+    display: flex;
+}
+}

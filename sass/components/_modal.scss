@@ -1,0 +1,137 @@
+.modal {
+    position: relative;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--brand-color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition-property: transform;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-timing-function);
+
+
+&__btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--brand-color-white);
+
+    transition: color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-timing-function);
+}
+
+&__btn-close:hover,
+&__btn-close:focus-visible {
+    color: var(--brand-color-blue-light);
+}
+
+&__btn-close-icon {
+    width: 11px;
+    height: 11px;
+    fill: currentColor;
+}
+
+&__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+
+    color: #212121;
+}
+
+&__field+&__field {
+    margin-top: 10px;
+}
+
+&__input {
+    padding: 10px 11px 10px 42px;
+    line-height: 1.17;
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-timing-function);
+}
+
+&__input::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    ;
+}
+
+&__input:hover,
+&__input:focus {
+    border: 1px solid var(--brand-color-blue-light);
+}
+
+&__input-comment {
+    display: block;
+    padding: 11px 15px;
+    resize: none;
+    height: 120px;
+}
+
+&__field {
+    display: flex;
+    flex-direction: column;
+}
+
+&__decoration {
+    position: relative;
+}
+
+&__field-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--brand-color-black-light);
+
+    transition: fill;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-timing-function);
+}
+
+&__input:hover+&__field-icon,
+&__input:focus+&__field-icon {
+    fill: var(--brand-color-blue-light);
+}
+
+&__field-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    text-align: start;
+    letter-spacing: 0.01em;
+    color: var(--brand-color-gray);
+}
+
+&__button {
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+}

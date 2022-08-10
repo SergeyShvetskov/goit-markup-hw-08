@@ -1,0 +1,17 @@
+.footer-page {
+    padding: 60px 0;
+    background: var(--brand-color-black-dark);
+
+
+&__logo {
+    margin-bottom: 20px;
+    margin-left: auto;
+    display: block;
+    color: var(--brand-color-white);
+}
+
+&__container {
+    display: flex;
+}
+
+}

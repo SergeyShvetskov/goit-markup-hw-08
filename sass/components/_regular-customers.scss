@@ -1,11 +1,11 @@
 /* Секция Постоянные клиенты */
 .regular-customers {
-    display: flex;
+    // display: flex;
     list-style: none;
 
 
 &__item:not(:first-child) {
-    margin-left: 30px;
+    // margin-left: 30px;
 }
 
 &__icon {

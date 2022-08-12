@@ -82,21 +82,11 @@ img {
 }
 
 .auth-nav {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
-}
-.auth-nav__item:last-child {
-  margin-left: 30px;
 }
 .auth-nav__link {
   text-decoration: none;
   line-height: 1.17;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -247,9 +237,6 @@ img {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -357,7 +344,6 @@ img {
 .logo {
   text-decoration: none;
   line-height: 1.19;
-  margin-right: 93px;
   font-size: 26px;
   color: var(--brand-color-black);
   font-family: "Raleway", sans-serif;
@@ -373,14 +359,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .header-page__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -392,16 +372,9 @@ img {
 }
 .footer-page__logo {
   margin-bottom: 20px;
-  margin-left: auto;
   display: block;
   color: var(--brand-color-white);
 }
-.footer-page__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .footer-social {
   margin-top: 12px;
   margin-left: 60px;
@@ -500,10 +473,6 @@ img {
           transform: translate(-50%, -50%) scale(0.5);
 }
 
-.mailing {
-  margin-left: 93px;
-  margin-top: 12px;
-}
 .mailing__title {
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -514,7 +483,6 @@ img {
   letter-spacing: 0.03em;
 }
 .mailing__input {
-  margin-right: 12px;
   padding: 15px 16px;
   width: 358px;
   color: var(--brand-color-white);
@@ -583,12 +551,6 @@ img {
   width: 24px;
   height: 24px;
 }
-.mailing__group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .modal {
   position: relative;
   padding: 40px;
@@ -754,9 +716,6 @@ img {
 }
 
 .personal-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
 }
 .personal-cards__section {
@@ -768,20 +727,10 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.personal-cards__item:not(:first-child) {
-  margin-left: 30px;
-}
-
 /* Портфолио карточки */
 .portfolio-card {
   list-style: none;
   margin-top: calc(-1 * var(--card-set-portfolio));
-  margin-left: calc(-1 * var(--card-set-portfolio));
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .portfolio-card__link {
   text-decoration: none;
@@ -873,13 +822,7 @@ img {
 
 /* Секция Постоянные клиенты */
 .regular-customers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
-}
-.regular-customers__item:not(:first-child) {
-  margin-left: 30px;
 }
 .regular-customers__icon {
   fill: currentColor;
@@ -927,16 +870,12 @@ img {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
 }
 .site-nav__link {
-  padding: 32px 0;
   display: block;
   font-size: 14px;
   font-weight: 500;
@@ -953,9 +892,6 @@ img {
 }
 .site-nav__link:hover, .site-nav__link:focus, .site-nav__link--active {
   color: var(--brand-color-blue-light);
-}
-.site-nav__item:not(:first-child) {
-  margin-left: 50px;
 }
 .site-nav__item {
   position: relative;
@@ -991,15 +927,9 @@ img {
 
 .workers {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .workers__section {
   padding-top: 0;
-}
-.workers__item:not(:first-child) {
-  margin-left: 30px;
 }
 .workers__thumb {
   position: relative;

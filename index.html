@@ -28,35 +28,50 @@
       <div class="container header-page__container">
         <nav class="header-page__nav">
           <a class="logo" href="./index.html"> <span class="logo__part">Web</span>Studio</a>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--active" href="./index.html">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <button
+            class="header-page__menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="header-page__menu-container"
+            data-menu-button
+          >
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              <use class="header-page__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+              <use class="header-page__icon-close" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
 
-        <ul class="auth-nav">
-          <li class="auth-nav__item">
-            <a class="auth-nav__link" href="mailto:info@devstudio.com"
-              ><svg class="auth-nav__icon-mail">
-                <use href="./images/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-nav__item">
-            <a class="auth-nav__link" href="tel:+380961111111"
-              ><svg class="auth-nav__icon-phone">
-                <use href="./images/icons.svg#icon-tel"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <div class="header-page__menu-container" id="header-page__menu-container" data-menu>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--active" href="./index.html">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="auth-nav">
+              <li class="auth-nav__item">
+                <a class="auth-nav__link" href="mailto:info@devstudio.com"
+                  ><svg class="auth-nav__icon-mail">
+                    <use href="./images/icons.svg#icon-mail"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="auth-nav__item">
+                <a class="auth-nav__link auth-nav__link-big" href="tel:+380961111111"
+                  ><svg class="auth-nav__icon-phone">
+                    <use href="./images/icons.svg#icon-tel"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
     <!--Герой-->

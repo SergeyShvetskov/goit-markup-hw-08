@@ -3,10 +3,15 @@
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
-}
 
 
- .button-group__item {
+ &__item {
     margin-bottom: 15px;
  }
+
+@media screen and (min-width: 768px) {
+    & {
+    justify-content: center;
+    }
+}
+}

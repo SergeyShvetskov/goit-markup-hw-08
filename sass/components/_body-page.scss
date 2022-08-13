@@ -4,3 +4,7 @@
     background-color: var(--brand-color-white);
     color: var(--brand-color-black-light);
 }
+
+.body-page.modal-open {
+    overflow: hidden;
+}

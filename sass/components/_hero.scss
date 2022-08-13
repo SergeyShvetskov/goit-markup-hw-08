@@ -1,10 +1,9 @@
 .hero {
+    // display: none;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
 
-
-    
 &__button {
     margin: 0;
     padding: 10px 32px;
@@ -32,9 +31,9 @@
 }
 
 &__overlay {
-    // margin-right: auto;
-    // margin-left: auto;
-    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    // max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-color: #C4C4C4;    
     background-position: center;
@@ -53,6 +52,7 @@
 }
 
 &__backdrop {
+    padding: 94px 15px;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,6 +64,7 @@
     transition-duration: var(--animation-duration);
     transition-timing-function: var(--animation-timing-function);
     z-index: 999;
+    overflow-y: scroll;
 }
 
 &__backdrop.is-hidden {
@@ -72,6 +73,12 @@
 }
 &__backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.5);
+}
+
+@media screen and (min-width: 1200px) {
+    &__overlay {
+    max-width: 1600px;
+    }
 }
 
 }

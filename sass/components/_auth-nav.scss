@@ -1,16 +1,24 @@
 .auth-nav {
     // margin-left: auto;
-    // display: flex;
     list-style: none;
-
-
-&__item:last-child {
-    // margin-left: 30px;
+    text-align: left;
+    @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
 }
+    @media screen and (min-width: 1200px) {
+    flex-direction: row;
+}
+&__item:last-child {
+        
+        @media screen and (max-width: 767px) {
+                margin-bottom: 32px;
+            }
+    }
 &__link {
     text-decoration: none;
     line-height: 1.17;
-    // display: flex;
+    display: flex;
     align-items: center;
     font-size: 14px;
     font-weight: 500;
@@ -20,8 +28,22 @@
     transition: color;
     transition-duration: var(--animation-duration);
     transition-timing-function: var(--animation-timing-function);
+    
+    @media screen and (max-width: 767px) {
+        font-size: 28px;
+    }
+}
+&__item {
+    margin: 0;
+    padding: 0;
 }
 
+&__link-big {
+    @media screen and (max-width: 767px) {
+        font-size: 34px;
+        color: var(--brand-color-blue-light);
+    }
+}
 &__link:hover,
 &__link:focus {
     color: var(--brand-color-blue-light);
@@ -29,16 +51,52 @@
 
 
 &__icon-mail {
-    height: 12px;
-    width: 16px;
+    display: none;
+    height: 10px;
+    width: 14px;
     fill: currentColor;
     margin-right: 10px;
+
 }
 
 &__icon-phone {
-    height: 16px;
+    display: none;
+    height: 14px;
     width: 10px;
     fill: currentColor;
     margin-right: 10px;
 }
+@media screen and (min-width: 768px) {
+  
+&__item:last-child {
+        margin-top: 10px;
+    }
+    &__icon-mail {
+    display: inline-block;
+    }
+    &__icon-phone {
+    display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    &__item {
+        display: inline-block;
+    }
+    &__item:last-child {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    &__icon-mail {
+        height: 12px;
+        width: 16px;
+    }
+
+    &__icon-phone {
+        height: 16px;
+        width: 10px;
+    }
+}
+
 }

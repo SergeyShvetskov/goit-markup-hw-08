@@ -1,9 +1,9 @@
 .footer-social {
     margin-top: 12px;
-    margin-left: 60px;
-
+    
 
 &__title {
+    padding-top: 60px;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: var(--brand-color-white);
@@ -22,4 +22,18 @@
 &__btn:focus {
     background-color: var(--brand-color-blue-light);
 }
+
+@media screen and (min-width: 768px) {
+    & {
+        // padding-left: 165px;
+    }
+    &__title {
+        padding-top: 0;
+    }
+ }
+ @media screen and (min-width: 1200px) {
+     & {
+        margin-left: 70px;
+     }
+ }
 }

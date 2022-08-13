@@ -2,5 +2,11 @@
     list-style: none;
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    // justify-content: center;
 }
+
+
+ .button-group__item {
+    margin-bottom: 15px;
+ }

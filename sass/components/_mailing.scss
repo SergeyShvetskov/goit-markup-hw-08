@@ -1,9 +1,12 @@
 .mailing {
+    text-align: center;
     // margin-left: 93px;
     // margin-top: 12px;
 
 
 &__title {
+    padding-top: 60px;
+    text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: var(--brand-color-white);
@@ -14,9 +17,10 @@
 }
 
 &__input {
+    display: block;
     // margin-right: 12px;
     padding: 15px 16px;
-    width: 358px;
+    width: 450px;
     color: var(--brand-color-white);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -33,8 +37,10 @@
 
 &__button {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    margin-top: 20px;
     min-width: 200px;
+    height: 50px;
     display: flex;
 
     cursor: pointer;
@@ -61,4 +67,31 @@
 &__group {
     // display: flex;
 }
+@media screen and (min-width: 768px) {
+    & {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    & {
+        margin-left: 93px;
+        margin-top: 12px;
+    }
+    &__input {
+        margin-right: 12px;
+        width: 358px;
+    }
+        &__group {
+            display: flex;
+        }
+        &__button {
+            margin-top: 0;
+        }
+        &__title {
+            padding-top: 0;
+            text-align: left;
+        }
+}
+
 }

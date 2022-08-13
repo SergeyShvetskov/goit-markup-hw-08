@@ -1,7 +1,8 @@
 /* Портфолио карточки */
 .portfolio-card {
+    margin: -15px;
     list-style: none;
-    margin-top: calc(-1 * var(--card-set-portfolio));
+    // margin-top: calc(-1 * var(--card-set-portfolio));
     // margin-left: calc(-1 * var(--card-set-portfolio));
     // display: flex;
     // flex-wrap: wrap;
@@ -28,9 +29,10 @@
 }
 
 &__item {
-    margin-top: var(--card-set-portfolio);
-    margin-left: var(--card-set-portfolio);
-    flex-basis: calc(100% / 3 - var(--card-set-portfolio));
+    margin: 15px
+    // margin-top: var(--card-set-portfolio);
+    // margin-left: var(--card-set-portfolio);
+    // flex-basis: calc(100% / 3 - var(--card-set-portfolio));
 }
 
 &__decor {
@@ -82,4 +84,19 @@
     position: relative;
     overflow: hidden;
 }
+
+@media screen and (min-width: 480px) {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {}
+
+
 }

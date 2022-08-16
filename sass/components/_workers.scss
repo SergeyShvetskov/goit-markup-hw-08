@@ -1,16 +1,21 @@
-.workers {
-    list-style: none;
-    
 
-&__section {
+.workers {
     display: none;
     padding-top: 0;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+      }
+
+&__list {
+    margin: 0 -15px;
+    display: flex;
+    list-style: none;
 }
+
 &__item {
-    display: inline-block;
-}
-&__item:not(:first-child){
-    // margin-left: 30px;
+    margin: 0 15px;
+    display: flex;
 }
 
 &__thumb {
@@ -33,6 +38,7 @@
 
 
 &__decor {
+
     position: absolute;
     display: flex;
     justify-content: center;
@@ -41,18 +47,8 @@
     width: 100%;
     bottom: 0;
     background: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+
 }
 
-@media screen and (min-width: 480px) {
-        
- 
-}
-@media screen and (min-width: 768px) {}
-
-   @media screen and (min-width: 1200px) {
-
-    &__section {
-        display: flex;
-    }
-   }
+  
 }

@@ -1,8 +1,11 @@
 .hero {
     // display: none;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    height: 600px;
     text-align: center;
+    display: flex;
+    align-items: center;
 
 &__button {
     margin: 0;
@@ -33,7 +36,7 @@
 &__overlay {
     margin-right: auto;
     margin-left: auto;
-    // max-width: 1600px;
+    max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-color: #C4C4C4;    
     background-position: center;
@@ -44,11 +47,12 @@
     margin-bottom: 30px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 1.36;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     color: var(--brand-color-white);
+
 }
 
 &__backdrop {
@@ -76,6 +80,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    &__title {
+    font-size: 44px;
+    line-height: 1.36;
+    }
     &__overlay {
     max-width: 1600px;
     }

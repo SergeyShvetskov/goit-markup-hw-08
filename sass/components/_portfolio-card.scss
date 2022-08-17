@@ -29,7 +29,14 @@
 }
 
 &__item {
-    margin: 15px
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+        }
     // margin-top: var(--card-set-portfolio);
     // margin-left: var(--card-set-portfolio);
     // flex-basis: calc(100% / 3 - var(--card-set-portfolio));

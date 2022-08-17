@@ -45,6 +45,32 @@
 &__menu-button.is-open &__icon-menu {
     display: none;
 }
+
+&__social-list {
+margin-top: 64px;
+list-style: none;
+display: none;
+flex-wrap: wrap;
+@media screen and (max-width: 767px) {
+    display: flex;
+}
+}
+&__social-list-item {
+    color: rgba(33, 33, 33, 0.2);;
+}
+
+&__social-list-link {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-blue-light);
+}
+&__social-list-item:not(:first-child) {
+    margin-left: 10px;
+}
+
 &__menu-container {
     
     background-color: var(--brand-color-white);
@@ -58,12 +84,11 @@
         display: none;
         position: absolute;
         top: 0;
-        // top: 100%;
         left: 0;
         width:  100%;
         height: 100vh;
 
-&.is-open {
+    &.is-open {
         display: flex;
         flex-direction: column;
         justify-content: space-between;

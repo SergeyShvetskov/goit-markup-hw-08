@@ -10,8 +10,11 @@
 
 &__link {
     text-decoration: none;
-    display: block;
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid var(--brand-color-gray-border);
+    border-top: none;
     transition: box-shadow;
     transition-duration: var(--animation-duration);
     transition-timing-function: var(--animation-timing-function);
@@ -41,11 +44,11 @@
     // margin-left: var(--card-set-portfolio);
     // flex-basis: calc(100% / 3 - var(--card-set-portfolio));
 }
-
+&__article {
+    
+}
 &__decor {
     padding: 20px 23px 19px 24px;
-    border: 1px solid var(--brand-color-gray-border);
-    border-top: none;
     // flex-grow: 1;
 }
 

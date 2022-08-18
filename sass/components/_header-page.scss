@@ -11,7 +11,6 @@
 }
 
 &__container {
-    // display: flex;
     align-items: center;
 }
 
@@ -22,14 +21,14 @@
     border: none;
     background-color: transparent;
 
+    &:hover {
+        color: var(--brand-color-blue-light);
+    }
+
     @media screen and (min-width: 768px) {
         display: none;
     }
     z-index: 999;
-
-    &:hover {
-        color: var(--brand-color-blue-light);
-    }
 }
 
 &__icon {
@@ -51,6 +50,7 @@ margin-top: 64px;
 list-style: none;
 display: none;
 flex-wrap: wrap;
+
 @media screen and (max-width: 767px) {
     display: flex;
 }
@@ -72,7 +72,7 @@ flex-wrap: wrap;
 }
 
 &__menu-container {
-    
+    // display: none;
     background-color: var(--brand-color-white);
     text-align: center;
     font-size: 20px;

@@ -1159,6 +1159,20 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (max-width: 767px) {
+  .portfolio-card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-card {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
 .portfolio-card__link {
   text-decoration: none;
   display: -webkit-box;
@@ -1253,20 +1267,6 @@ img {
 .portfolio-card__thumb {
   position: relative;
   overflow: hidden;
-}
-@media screen and (max-width: 767px) {
-  .portfolio-card {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .portfolio-card {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
 }
 
 .portfolio-title {

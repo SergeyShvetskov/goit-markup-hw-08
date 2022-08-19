@@ -2,6 +2,8 @@
 .portfolio-card {
     margin: -15px;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 
 &__link {
 
@@ -27,8 +29,10 @@
 }
 
 &__item {
+    width: 370px;
     margin: 15px;
     @media screen and (min-width: 768px) and (max-width: 1199px){
+
             width: 354px;
         }
     
@@ -90,15 +94,19 @@
     overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
       & {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    & {
         justify-content: left;
     }
-}
-@media screen and (min-width: 768px) {
-
 }
 
 }

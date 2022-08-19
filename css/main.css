@@ -193,7 +193,14 @@ img {
 .benefits {
   margin: -15px;
   list-style: none;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .benefits__item {
   margin: 15px;
@@ -229,17 +236,7 @@ img {
   line-height: 1.714;
   color: var(--brand-color-gray);
 }
-@media screen and (min-width: 480px) and (min-width: 768px) {
-  .benefits {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+@media screen and (min-width: 768px) {
   .benefits__title {
     text-align: left;
   }
@@ -260,15 +257,28 @@ img {
 
 .button-group {
   list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.button-group__item {
-  margin-bottom: 15px;
+@media screen and (max-width: 767px) {
+  .button-group {
+    margin-top: -15px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .button-group {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button-group__item {
+    margin-top: 15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .button-group {
@@ -686,6 +696,8 @@ img {
 }
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   height: 600px;
   text-align: center;
   display: -webkit-box;
@@ -1066,6 +1078,7 @@ img {
           flex-direction: column;
 }
 .modal__decoration {
+  display: block;
   position: relative;
 }
 .modal__field-icon {
@@ -1145,6 +1158,10 @@ img {
   height: 100%;
   border: 1px solid var(--brand-color-gray-border);
   border-top: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow;
   transition: -webkit-box-shadow;
   transition: box-shadow;
@@ -1178,6 +1195,11 @@ img {
 }
 .portfolio-card__decor {
   padding: 20px 23px 19px 24px;
+  border: 1px solid var(--brand-color-gray-border);
+  border-top: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .portfolio-card__title {
   color: var(--brand-color-black-light);
@@ -1450,6 +1472,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 370px;
 }
 .workers__thumb {
   position: relative;
@@ -1464,6 +1487,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+  font-size: 14px;
 }
 .workers__decor {
   position: absolute;

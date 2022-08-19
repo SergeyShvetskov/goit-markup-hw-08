@@ -1,8 +1,9 @@
 .benefits {
     margin: -15px;
     list-style: none;
-    // display: flex;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 &__item {
     margin: 15px;
@@ -34,43 +35,23 @@
 }
 
 &__text {
-    // width: 270px;
     font-size: 14px;
     line-height: 1.714;
     color: var(--brand-color-gray);
 }
 
-@media screen and (min-width: 480px) {
-    &__thumb {
-    // width: 270px;
-    // text-align: left;
-    }
-    &__title {
-        // text-align: left;
-    }
-     &__text {
-        // width: 270px;
-    }
 
     @media screen and (min-width: 768px){
-   
-        & {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
         &__title {
             text-align: left;
         }
-
         &__text {
             width: 270px;
         }
-
     }
    @media screen and (min-width: 1200px) {
        
    }
 
-}
+
 }

@@ -126,34 +126,49 @@
               <div class="modal__field">
                 <label class="modal__field-item">
                   <span class="modal__field-label">Имя</span>
-                  <div class="modal__decoration">
-                    <input class="modal__input" name="name" type="text" autofocus />
+                  <span class="modal__decoration">
+                    <input
+                      class="modal__input"
+                      name="user_name"
+                      type="text"
+                      autofocus
+                      required
+                      minlength="2"
+                      pattern="[a-zA-Zа-яА-Я]+"
+                    />
                     <svg class="modal__field-icon">
                       <use href="./images/icons.svg#icon-name"></use>
                     </svg>
-                  </div>
+                  </span>
                 </label>
               </div>
               <div class="modal__field">
                 <label class="modal__field-item">
                   <span class="modal__field-label">Телефон</span>
-                  <div class="modal__decoration">
-                    <input class="modal__input" name="tel" type="tel" />
+                  <span class="modal__decoration">
+                    <input
+                      class="modal__input"
+                      name="user_phone"
+                      type="tel"
+                      required
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                      title="xxx-xxx-xx-xx"
+                    />
                     <svg class="modal__field-icon">
                       <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
-                  </div>
+                  </span>
                 </label>
               </div>
               <div class="modal__field">
                 <label class="modal__field-item">
                   <span class="modal__field-label">Почта</span>
-                  <div class="modal__decoration">
+                  <span class="modal__decoration">
                     <input class="modal__input" name="email" type="email" />
                     <svg class="modal__field-icon">
                       <use href="./images/icons.svg#icon-email"></use>
                     </svg>
-                  </div>
+                  </span>
                 </label>
               </div>
               <div class="modal__field">
@@ -251,7 +266,7 @@
                   srcset="./images/img5_370px.jpg 370w, ./images/img5_740px.jpg 740w"
                   src="./images/img5_370px.jpg"
                   alt="Фото процесса набора кода"
-                  width="370"
+                  sizes="(min-width: 1200px) 30vw, 100vw"
                 />
                 <div class="workers__decor">
                   <p class="workers__text">Десктопные приложения</p>
@@ -265,7 +280,7 @@
                   srcset="./images/img6_370px.jpg 370w, ./images/img6_740px.jpg 740w"
                   src="./images/img6_370px.jpg"
                   alt="Фото процесса разработки дизайна мобильного приложения"
-                  width="370"
+                  sizes="(min-width: 1200px) 30vw, 100vw"
                 />
                 <div class="workers__decor">
                   <p class="workers__text">Мобильные приложения</p>
@@ -279,7 +294,7 @@
                   srcset="./images/img7_370px.jpg 370w, ./images/img7_740px.jpg 740w"
                   src="./images/img7_370px.jpg"
                   alt="Фото карты цветов на планшете"
-                  width="370"
+                  sizes="(min-width: 1200px) 30vw, 100vw"
                 />
                 <div class="workers__decor">
                   <p class="workers__text">Дизайнерские решения</p>
@@ -309,6 +324,7 @@
                     "
                     src="./images/img1_270px.jpg"
                     alt="Фото Игорь Демьяненко"
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   />
                 </div>
                 <div class="card__footer">
@@ -363,6 +379,7 @@
                     "
                     src="./images/img2_270px.jpg"
                     alt="Фото Ольга Репина"
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   />
                 </div>
                 <div class="card__footer">
@@ -417,6 +434,7 @@
                     "
                     src="./images/img3_270px.jpg"
                     alt="Фото Николай Тарасов"
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   />
                 </div>
                 <div class="card__footer">
@@ -471,6 +489,7 @@
                     "
                     src="./images/img4_270px.jpg"
                     alt="Фото Михаил Ермаков"
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   />
                 </div>
                 <div class="card__footer">

@@ -2,7 +2,9 @@
 .personal-cards {
     text-align: center;
     margin: -15px;
-    // display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     list-style: none;
 
 &__section {
@@ -16,17 +18,12 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-
 @media screen and (min-width: 768px) {
     & {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     }
 }
-@media screen and (min-width: 1200px) {
-    
-}
-
 
 }

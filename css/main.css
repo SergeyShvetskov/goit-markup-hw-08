@@ -1508,10 +1508,6 @@ img {
 }
 .workers__thumb {
   position: relative;
-  background-image: url(../images/img5_370px.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .workers__image {
   display: block;

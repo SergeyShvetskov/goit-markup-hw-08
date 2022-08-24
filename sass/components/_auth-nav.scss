@@ -1,7 +1,7 @@
 .auth-nav {
-    // margin-left: auto;
     list-style: none;
     text-align: left;
+
     @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
@@ -10,11 +10,20 @@
     flex-direction: row;
 }
 &__item:last-child {
-        
-        @media screen and (max-width: 767px) {
-                margin-bottom: 32px;
-            }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 10px;
     }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+}
 &__link {
     text-decoration: none;
     line-height: 1.17;
@@ -36,6 +45,10 @@
 &__item {
     margin: 0;
     padding: 0;
+
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+    }
 }
 
 &__link-big {
@@ -57,6 +70,14 @@
     fill: currentColor;
     margin-right: 10px;
 
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 12px;
+        width: 16px;
+    }
 }
 
 &__icon-phone {
@@ -65,35 +86,12 @@
     width: 10px;
     fill: currentColor;
     margin-right: 10px;
-}
-@media screen and (min-width: 768px) {
-  
-&__item:last-child {
-        margin-top: 10px;
-    }
-    &__icon-mail {
-    display: inline-block;
-    }
-    &__icon-phone {
-    display: inline-block;
-    }
-}
 
-@media screen and (min-width: 1200px) {
-    &__item {
+    @media screen and (min-width: 768px) {
         display: inline-block;
     }
-    &__item:last-child {
-        margin-top: 0;
-        margin-left: 30px;
-    }
 
-    &__icon-mail {
-        height: 12px;
-        width: 16px;
-    }
-
-    &__icon-phone {
+    @media screen and (min-width: 1200px) {
         height: 16px;
         width: 10px;
     }

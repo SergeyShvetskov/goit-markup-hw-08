@@ -2,7 +2,6 @@
     margin-top: 20px;
     margin-bottom: 30px;
     display:inline-flex;
-    // display: flex;
     align-items: center;
     cursor: pointer;
     font-size: 12px;
@@ -14,14 +13,13 @@
         }
 
 &__link {
-    // margin-left: 4px;
     font-size: 12px;
     text-align: left;
     line-height: 1.71;
     color: var(--brand-color-blue-light);
     
     @media screen and (min-width: 1200px) {
-    font-size: 14px;
+        font-size: 14px;
     }
 }
 

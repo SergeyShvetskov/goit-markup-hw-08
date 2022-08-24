@@ -104,9 +104,20 @@ img {
             flex-direction: row;
   }
 }
+@media screen and (min-width: 768px) {
+  .auth-nav__item:last-child {
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .auth-nav__item:last-child {
     margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__item:last-child {
+    margin-top: 0;
+    margin-left: 30px;
   }
 }
 .auth-nav__link {
@@ -138,6 +149,11 @@ img {
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 1200px) {
+  .auth-nav__item {
+    display: inline-block;
+  }
+}
 @media screen and (max-width: 767px) {
   .auth-nav__link-big {
     font-size: 34px;
@@ -154,6 +170,17 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .auth-nav__icon-mail {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__icon-mail {
+    height: 12px;
+    width: 16px;
+  }
+}
 .auth-nav__icon-phone {
   display: none;
   height: 14px;
@@ -162,28 +189,11 @@ img {
   margin-right: 10px;
 }
 @media screen and (min-width: 768px) {
-  .auth-nav__item:last-child {
-    margin-top: 10px;
-  }
-  .auth-nav__icon-mail {
-    display: inline-block;
-  }
   .auth-nav__icon-phone {
     display: inline-block;
   }
 }
 @media screen and (min-width: 1200px) {
-  .auth-nav__item {
-    display: inline-block;
-  }
-  .auth-nav__item:last-child {
-    margin-top: 0;
-    margin-left: 30px;
-  }
-  .auth-nav__icon-mail {
-    height: 12px;
-    width: 16px;
-  }
   .auth-nav__icon-phone {
     height: 16px;
     width: 10px;
@@ -244,6 +254,7 @@ img {
     width: 270px;
   }
 }
+
 .body-page {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -265,6 +276,13 @@ img {
       flex-wrap: wrap;
   margin-top: -15px;
 }
+@media screen and (min-width: 768px) {
+  .button-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media screen and (max-width: 767px) {
   .button-group {
     margin-bottom: 40px;
@@ -277,13 +295,6 @@ img {
 }
 .button-group__item {
   margin-top: 15px;
-}
-@media screen and (min-width: 768px) {
-  .button-group {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 .button {
@@ -360,15 +371,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -636,6 +648,11 @@ img {
   padding: 60px 0;
   background: var(--brand-color-black-dark);
 }
+@media screen and (min-width: 1200px) {
+  .footer-page {
+    text-align: left;
+  }
+}
 .footer-page__logo {
   margin-bottom: 20px;
   display: block;
@@ -653,9 +670,6 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer-page {
-    text-align: left;
-  }
   .footer-page__container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -735,38 +749,39 @@ img {
 .hero__overlay {
   margin-right: auto;
   margin-left: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/mobile@2x.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mobile@2x.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mobile.jpg);
   background-color: #C4C4C4;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero__overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/mobile@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mobile@2x.jpg);
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/tablet.jpg);
   }
 }
-@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero__overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/tablet@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/tablet@2x.jpg);
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero__overlay {
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/desktop.jpg);
   }
 }
-@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/desktop@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/desktop@2x.jpg);
@@ -781,6 +796,12 @@ img {
   line-height: 1.62;
   letter-spacing: 0.06em;
   color: var(--brand-color-white);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__backdrop {
   padding: 94px 15px;
@@ -807,15 +828,6 @@ img {
 .hero__backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
-}
-@media screen and (min-width: 1200px) {
-  .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
-  }
-  .hero__overlay {
-    max-width: 1600px;
-  }
 }
 
 .mailing {
@@ -1125,6 +1137,18 @@ img {
           justify-content: left;
   list-style: none;
 }
+@media screen and (min-width: 768px) {
+  .personal-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
 .personal-cards__section {
   background: var(--brand-color-gray-light);
 }
@@ -1137,15 +1161,13 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 @media screen and (min-width: 768px) {
-  .personal-cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+  .personal-cards__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .personal-cards__item {
+    width: 270px;
   }
 }
 
@@ -1486,6 +1508,10 @@ img {
 }
 .workers__thumb {
   position: relative;
+  background-image: url(../images/img5_370px.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .workers__image {
   display: block;

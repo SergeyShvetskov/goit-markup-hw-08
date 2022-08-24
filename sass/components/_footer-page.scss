@@ -4,29 +4,23 @@
     padding: 60px 0;
     background: var(--brand-color-black-dark);
 
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 
 &__logo {
     margin-bottom: 20px;
     display: block;
     color: var(--brand-color-white);
 }
-
-
-@media screen and (min-width: 480px) {}
-
-@media screen and (min-width: 768px) {
-    &__container {
+&__container {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-around;
+        justify-content: space-around;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    & {
-        text-align: left;
-    }
-    &__container {
+    @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
     }
 }
